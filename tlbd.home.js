@@ -1,4 +1,30 @@
 /* Universal Code */
+var configSummary = {
+    thumbnailSize: "s280", // Define the post thumbnail size
+    summaryLength: 220, // Define the summary length     
+    defaultView: "list", // Default view Mode
+	postPerPage:4, // Number post every Page  
+	numshowpage:5
+};
+var Alldefaultconfig = {
+    MaxPost:5,
+	MoreText: "Load more posts",
+    monthName: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],	
+	viewMoreText: "View More About",
+	BackupImage: "http://1.bp.blogspot.com/-htG7vy9vIAA/Tp0KrMUdoWI/AAAAAAAABAU/e7XkFtErqsU/s72-c/grey.gif", 
+	summaryLength:150,	
+	FirstImageSize:"s220-p",
+	ImageSize:"s70-p", 
+	slideshowSpeed:5000,
+	NewsTickerText:"চলমান",
+	RandomTitle:"Random Posts",
+	RecentTitle:"Recent Posts",
+	RelatedTitle:"আরও পড়ুন",
+    CommentMode:"blogger",
+	redirectMobile:false,
+	stickySidebar:false,
+	stickyMenu:true
+};
 // I guess It's for home page
 if (Alldefaultconfig.redirectMobile) {var curl = window.location.href;if (curl.indexOf('m=1') != -1) {curl = curl.replace('m=1', 'm=0');window.location.href = curl;}}
 function resizeimage(a){var b=a.currentTarget;h=Number($(b).height());w=Number($(b).width());th=Number($(b).parents().height());tw=Number($(b).parents().width());new_w=(w/h)*th;new_h=th;left=($("#outer-wrapper").hasClass("rtl")?"margin-right":"margin-left");if(new_w<tw){new_w=tw;new_h=(h/w)*tw;margin_top=-((new_h-th)/2);$(b).css("width",new_w+"px");$(b).css("height",new_h+"px");$(b).css("margin-top",margin_top+"px")}else{margin_left=-((new_w-tw)/2);$(b).css("width",new_w+"px");$(b).css("height",new_h+"px");$(b).css(left,margin_left+"px")}};
