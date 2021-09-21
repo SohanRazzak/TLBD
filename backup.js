@@ -1,4 +1,4 @@
-//<![CDATA[
+
 var configSummary = {
     thumbnailSize: "s280", // Define the post thumbnail size
     summaryLength: 220, // Define the summary length     
@@ -25,10 +25,7 @@ var Alldefaultconfig = {
 	stickySidebar:false,
 	stickyMenu:true
 };
-//]]>
-</script>
-<script class='jshilang' type='text/javascript'>
-//<![CDATA[
+
 if (Alldefaultconfig.redirectMobile) {var curl = window.location.href;if (curl.indexOf('m=1') != -1) {curl = curl.replace('m=1', 'm=0');window.location.href = curl;}}
 function resizeimage(a){var b=a.currentTarget;h=Number($(b).height());w=Number($(b).width());th=Number($(b).parents().height());tw=Number($(b).parents().width());new_w=(w/h)*th;new_h=th;left=($("#outer-wrapper").hasClass("rtl")?"margin-right":"margin-left");if(new_w<tw){new_w=tw;new_h=(h/w)*tw;margin_top=-((new_h-th)/2);$(b).css("width",new_w+"px");$(b).css("height",new_h+"px");$(b).css("margin-top",margin_top+"px")}else{margin_left=-((new_w-tw)/2);$(b).css("width",new_w+"px");$(b).css("height",new_h+"px");$(b).css(left,margin_left+"px")}};
 function changeimage(){$(".thumbimage img").each(function(){$(this).removeAttr("style");h=Number($(this).height());w=Number($(this).width());th=Number($(this).parents().height());tw=Number($(this).parents().width());new_w=(w/h)*th;new_h=th;left=($("#outer-wrapper").hasClass("rtl")?"margin-right":"margin-left");if(new_w<tw){new_w=tw;new_h=(h/w)*tw;margin_top=-((new_h-th)/2);$(this).css("width",new_w+"px");$(this).css("height",new_h+"px");$(this).css("margin-top",margin_top+"px")}else{margin_left=-((new_w-tw)/2);$(this).css("width",new_w+"px");$(this).css("height",new_h+"px");$(this).css(left,margin_left+"px")}})};
