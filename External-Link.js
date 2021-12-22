@@ -1,3 +1,5 @@
+/* <button class="ex-link" data-href="link" onclick=openModal();>লিংক</button> */
+// Use this markup
 const modalButton = document.querySelector(".ex-link");
 const extra = document.createElement("div");
 const modalhtml = `<div class="modal-header">
@@ -11,7 +13,7 @@ const modalhtml = `<div class="modal-header">
 </div>
 <div class="modal-footer">
 <button class="close-modal" onclick="closeModal()">থাকুন </button>
-<button class="confirm-modal">যান</>
+<button class="confirm-modal">যান</button>
 </div>`;
 var openModal;
 if (modalButton)
