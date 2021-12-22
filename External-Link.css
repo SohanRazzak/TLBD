@@ -1,0 +1,58 @@
+button.ex-link {
+  min-width: 150px;
+  display: block;
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid white;
+  background-color: #6600d6;
+  color: white;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+
+.modal-content {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  margin-left: -190px;
+  width: 380px;
+  background: #fff;
+  color: #545454;
+  border: 2px dotted #008080;
+}
+
+.modal-header {
+  font-size: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #cecece;
+}
+
+.modal-body {
+  padding: 20px;
+  text-align: center;
+  background: #f9f9f9;
+  border-bottom: 1px solid #cecece;
+}
+
+.modal-footer {
+  padding: 10px;
+}
+
+.modal-footer > button {
+  padding: 6px 10px;
+  margin: 0 8px;
+  cursor: pointer;
+  min-width: 50px;
+  background: #75e4d5;
+  border: 1px solid #008080;
+  border-radius: 4px;
+}
+
+.modal-header > .close-modal {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  cursor: pointer;
+}
