@@ -2497,8 +2497,46 @@ textarea.form-control {
     .entry-views[data-view]{visibility:visible;opacity:1}
     .entry-views::after{content:attr(data-view)}
     /* Ad status */
-    ins.adsbygoogle[data-ad-status="unfilled"] {max-height: 0}
-    ins.adsbygoogle[data-ad-status="filled"] {margin: 0 auto}
+    .ad-slot {
+  position: relative;
+  height: 300px;
+  background-color: #f1f1f1;
+  transition: height 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.ad-slot.loaded { }
+
+.ad-slot::before {
+  content: "Ads By GOOGLE";
+  position: absolute;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: blink 1s infinite;
+  transition: opacity 0.5s ease;
+}
+
+.ad-slot.loaded::before {
+  opacity: 0;
+  z-index: -1;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .ad-slot {
+    height: 280px;
+  }
+}
     /* Ad Recovery */
     .popSc{position:fixed;z-index:9999;opacity:1!important;top:0;bottom:0;left:0;right:0;padding:20px;background:var(--jt-bg-light);display:flex;justify-content:center;align-items:center;text-align:center}.no-scroll{overflow-y:hidden}.popSc .popBo{position:relative;background:var(--bs-body-bg);max-width:400px;display:flex;justify-content:center;align-items:center;flex-direction:column;padding:30px;border-radius:30px}.popSc .popBo svg{display:block;width:50px;height:50px;fill:none!important;stroke:#08102b;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}.popSc .popBo h2{margin:10px 0 15px;font-size:1.2rem;font-weight:800}.popSc .popBo p{line-height:1.7em;font-size:.9rem}
     
