@@ -1,8 +1,8 @@
 // Allowed domains
 const _d = [
-"techlegionbd.com","www.techlegionbd.com",
-"sub.example.com",
-"anotherdomain.com",
+// Original Site
+"techlegionbd.com",
+// Allowed Domain
 ];
 
 // Get current hostname
