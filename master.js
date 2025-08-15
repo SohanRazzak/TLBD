@@ -1,6 +1,6 @@
 // Allowed domains
 const _d = [
-"example.com",
+"techlegionbd.com",
 "sub.example.com",
 "anotherdomain.com",
 ];
