@@ -8,10 +8,9 @@ const _d = [
 
 // Get current hostname
 const _h = window.location.hostname;
-alert(_h);
 
 // If domain not allowed -> block page
-if (!_d.includes(_h)) {
+if (_d.includes(_h) === false) {
     const o = document.createElement("div");
     o.style.cssText = `
         position:fixed;top:0;left:0;width:100%;height:100%;
