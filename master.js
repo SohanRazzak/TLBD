@@ -2,6 +2,7 @@
 const _d = [
 // Original Site
 "techlegionbd.com",
+"www.techlegionbd.com",
 // Allowed Domain
 ];
 
