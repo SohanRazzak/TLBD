@@ -8,6 +8,7 @@ const _d = [
 
 // Get current hostname
 const _h = window.location.hostname;
+alert(_h);
 
 // If domain not allowed -> block page
 if (_d.includes(_h) === false) {
