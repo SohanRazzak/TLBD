@@ -3,13 +3,12 @@ const _d = [
 // Original Site
 "techlegionbd.com",
 "www.techlegionbd.com",
-"*.blogger.com"
+"draft.blogger.com"
 // Allowed Domain
 ];
 
 // Get current hostname
 const _h = window.location.hostname;
-alert(_h);
 
 // If domain not allowed -> block page
 if (_d.includes(_h) === false) {
