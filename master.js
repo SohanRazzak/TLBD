@@ -3,7 +3,8 @@ const _d = [
 // Original Site
 "techlegionbd.com",
 "www.techlegionbd.com",
-"draft.blogger.com"
+"draft.blogger.com",
+"animix7.blogspot.com"
 // Allowed Domain
 ];
 
